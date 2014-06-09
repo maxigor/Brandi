@@ -369,26 +369,33 @@ h3 {
 }
 
 .team {
-    width: 1240px;
     margin: 0 auto;
+    width: 1240px;
 }
 
-.person {
+figure {
     height: 373px;
     float: left;
     padding: 70px 40px 0px 0px;
+    margin: 0px;
+    position: relative;
 }
 
-.person:nth-child(1) {
+figure:nth-child(1) {
     padding-left: 20px;
-
 }
 
-.person:nth-child(4) {
+figure:nth-child(4) {
     padding-right: 0px;
 }
 
-.person p {
+figure img {
+    max-width: 100%;
+    display: block;
+    position: relative;
+}
+
+figure p {
     color: #000;
     font-size: 20px;
     text-align: center;
@@ -397,14 +404,42 @@ h3 {
     padding-top: 20px;
 }
 
-.person p:nth-child(3){
+figure p:nth-child(4){
     font-size: 17px;
     font-weight: normal;
     padding-top: 10px;
     color: #979ca1;
 }
 
+.cs-style-1 figcaption {
+    background: #1ab898;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
 
+.cs-style-1 figcaption p {
+    color: #fff;
+}
+
+.cs-style-1 figcaption {
+    width: 274px;
+    opacity: 0;
+    text-align: center;
+    backface-visibility: hidden;
+    transition: transform 0.3s, opacity 0.3s;
+    height: 300px;
+}
+
+.cs-style-1 figcaption:hover {
+    opacity: 0.9;
+    transform: translate(15px, 15px);
+    margin-top: 55px;
+}
+
+.cs-style-1 figcaption p {
+    margin-top: 30px;
+}
 /* ==================  PART5 ==================*/
 
 .part5 {
